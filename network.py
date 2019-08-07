@@ -3,7 +3,6 @@ import pandas as pd
 from queue import Queue
 q = Queue()
 
-
 # API Authentication
 
 CONSUMER_KEY = ''
@@ -17,9 +16,9 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth,wait_on_rate_limit=True,wait_on_rate_limit_notify=True)
 
 # Output details
-out_user = r’/path/user_details.csv'
-out_followers = r’/path/followers.csv'
-out_skip = r’/path/skip.csv'
+out_user = r'/path/user_details.csv'
+out_followers = r'/path/followers.csv'
+out_skip = r'/path/skip.csv'
 
 # Setting up data frames with initial user
 user = api.get_user('')
